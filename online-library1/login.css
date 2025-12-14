@@ -1,0 +1,84 @@
+/* إعدادات عامة */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* يضمن أن الصندوق يظهر في منتصف الشاشة */
+  direction: rtl;      /* اتجاه عربي */
+}
+
+/* صندوق تسجيل الدخول */
+.login-box {
+  background: linear-gradient(to bottom, #d2b48c, #a67b5b); /* تدرج بني */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #4b3621;
+  font-weight: bold;
+}
+
+/* النموذج */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  text-align: right;
+  color: #3e2723;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c2b280;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #a67b5b;
+  box-shadow: 0 0 0 3px rgba(166, 123, 91, 0.25);
+}
+
+/* الأزرار */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4b3621;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3e2723;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* مسافة بين زر الدخول وزر إنشاء حساب */
+button + button {
+  margin-top: 10px;
+}
