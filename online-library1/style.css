@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  direction: rtl;
+}
+
+/* شريط التنقل */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+li a:hover {
+  background-color: #575757;
+}
+
+.navbar {
+  direction: rtl;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;  }
+
+
+
+/* العناوين */
+h1, h2 {
+  text-align: center;
+  color: #5a3e2b;
+}
+
+/* الأقسام */
+.section {
+  width: 100%;
+  min-height: 500px;
+  padding: 100px 40px 40px;
+  border-top: 5px solid #3e2723;
+  border-bottom: 5px solid #3e2723;
+}
+
+/* الخلفيات بتدرجات بنية */
+.bg-beige-gold {
+  background: linear-gradient(to bottom, #f5e6cc, #d2b48c);
+}
+
+.bg-light-brown {
+  background: linear-gradient(to bottom, #d2b48c, #a67b5b);
+}
+
+.bg-medium-brown {
+  background: linear-gradient(to bottom, #a67b5b, #8b5e3c);
+}
+
+.bg-dark-brown {
+  background: linear-gradient(to bottom, #8b5e3c, #4b3621);
+}
+
+.bg-earthy {
+  background: linear-gradient(to bottom, #f3e5ab, #c2b280);
+}
+
+/* النص والصور */
+.text-box {
+  width: 45%;
+  float: left;
+  padding: 20px;
+}
+
+.image-box {
+  width: 45%;
+  float: right;
+  padding: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* معرض الكتب وفريق العمل */
+.book-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-item {
+  width: 180px;
+}
+
+.book-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.book-item img {
+  width: 180px;              /* عرض ثابت */
+  height: 180px;             /* ارتفاع ثابت */
+  object-fit: cover;         /* قص الصورة لتناسب الإطار */
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.book-item img:hover {
+  transform: scale(1.05);
+}
+
+.book-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #4b3621;
+  line-height: 1.5;
+}
+
+.plan-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* يوزع العناصر على كامل العرض */
+  gap: 25px;
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.plan-item {
+  background-color: #ffffff;
+  color: #4b3621;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plan-item:hover {
+  transform: scale(1.05);
+  background-color: #f0e6d2;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+  color: #4b3621;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c2b280;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fdfaf5;
+}
